@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-login-bg {
+    box-shadow:
+  6.2px 134px 369.6px rgba(0, 0, 0, 0.004),
+  7.4px 160.2px 432px rgba(0, 0, 0, 0.026),
+  7.8px 169.9px 447.3px rgba(0, 0, 0, 0.066),
+  7.9px 171.7px 440.7px rgba(0, 0, 0, 0.12),
+  7.8px 169.5px 422.9px rgba(0, 0, 0, 0.18),
+  7.6px 165.6px 400.5px rgba(0, 0, 0, 0.236),
+  7.4px 161.9px 379.1px rgba(0, 0, 0, 0.276),
+  7.4px 161.1px 366.4px rgba(0, 0, 0, 0.291),
+  7.8px 168.8px 377.7px rgba(0, 0, 0, 0.279),
+  11px 239px 500px rgba(0, 0, 0, 0.24) !important
+;
+}
