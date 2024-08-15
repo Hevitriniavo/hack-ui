@@ -1,0 +1,19 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - curl -o- https://get.pnpm.io/v6.16.js | node - add --global pnpm
+        - pnpm install
+    build:
+      commands:
+        - echo "VITE_APP_GOOGLE_CLIENT_ID=$VITE_APP_GOOGLE_CLIENT_ID" >> .env
+        - echo "VITE_API_URL=$VITE_API_URL" >> .env
+        - pnpm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
